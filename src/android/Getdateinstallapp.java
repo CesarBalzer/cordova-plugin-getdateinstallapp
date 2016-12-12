@@ -6,8 +6,6 @@ import org.json.JSONException;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import android.annotation.SdkConstant;
-import android.annotation.SdkConstant.SdkConstantType;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
