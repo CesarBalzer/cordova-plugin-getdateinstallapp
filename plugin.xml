@@ -18,12 +18,12 @@
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Hello">
-        <param name="android-package" value="br.com.balzer.getdateinstallapp.plugin.Hello"/>
+      <feature name="Getdateinstallapp">
+        <param name="android-package" value="br.com.balzer.getdateinstallapp.plugin.Getdateinstallapp"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/br/com/balzer/getdateinstallapp/plugin/"/>
+    <source-file src="src/android/Getdateinstallapp.java" target-dir="src/br/com/balzer/getdateinstallapp/plugin/"/>
   </platform>
 
 

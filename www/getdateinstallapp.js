@@ -2,6 +2,6 @@
 
 module.exports = {
     getdate: function (name, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "Hello", "getdate", [name]);
+        cordova.exec(successCallback, errorCallback, "Getdateinstallapp", "getdate", [name]);
     }
 };
