@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="br.com.balzer.hello"
+        id="br.com.balzer.getdateinstallapp"
         version="0.1.0">
 
   <name>Hello</name>
@@ -19,11 +19,11 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Hello">
-        <param name="android-package" value="br.com.balzer.plugin.Hello"/>
+        <param name="android-package" value="br.com.balzer.getdateinstallapp.plugin.Hello"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/br/com/balzer/plugin/"/>
+    <source-file src="src/android/Hello.java" target-dir="src/br/com/balzer/getdateinstallapp/plugin/"/>
   </platform>
 
 
