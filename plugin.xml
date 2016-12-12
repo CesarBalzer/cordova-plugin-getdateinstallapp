@@ -3,7 +3,7 @@
         id="br.com.balzer.getdateinstallapp"
         version="0.1.0">
 
-  <name>Hello</name>
+  <name>GetDateInstallApp</name>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
