@@ -1,6 +1,6 @@
 var exec = require('cordova/exec');
 
-var DateAPP = {
+var Fuck = {
     fodase: function (name, successCallback, errorCallback) {
         exec(successCallback, errorCallback, "GetInstallDateApp", "greet", [name]);
     },
@@ -8,4 +8,4 @@ var DateAPP = {
         exec(successCallback, errorCallback, "GetInstallDateApp", "mame", [name]);
     }
 };
-module.exports = DateAPP;
+module.exports = Fuck;
