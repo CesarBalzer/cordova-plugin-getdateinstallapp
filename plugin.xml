@@ -12,7 +12,7 @@
   <asset src="www/getdateinstallapp.js" target="js/getdateinstallapp.js"/>
 
   <js-module src="www/getdateinstallapp.js" name="getdateinstallapp">
-    <clobbers target="getdateinstallapp" />
+    <clobbers target="Gdia" />
   </js-module>
 
   <platform name="android">
