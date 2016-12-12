@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="br.com.balzer.getinstalldateapp"
+        version="0.1.0">
+
+  <name>GetInstallDateApp</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/getinstalldateapp.js" target="js/getinstalldateapp.js"/>
+
+  <js-module src="www/getinstalldateapp.js" name="getinstalldateapp">
+    <clobbers target="getinstalldateapp" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="GetInstallDateApp">
+        <param name="android-package" value="br.com.balzer.getinstalldateapp.GetInstallDateApp"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/GetInstallDateApp.java" target-dir="src/br/com/balzer/getinstalldateapp/"/>
+  </platform>
+
+
+</plugin>
