@@ -6,5 +6,5 @@ var DateAPP = {
     fodasedenovo: function (name, successCallback, errorCallback) {
         cordova.exec(successCallback, errorCallback, "GetInstallDateApp", "mame", [name]);
     }
-}
+};
 module.exports = DateAPP;

@@ -9,10 +9,10 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/getinstalldateapp.js" target="js/getinstalldateapp.js"/>
+  <asset src="www/GetInstallDateApp.js" target="js/GetInstallDateApp.js"/>
 
-  <js-module src="www/getinstalldateapp.js" name="getinstalldateapp">
-    <clobbers target="getinstalldateapp" />
+  <js-module src="www/GetInstallDateApp.js" name="GetInstallDateApp">
+    <clobbers target="GetInstallDateApp" />
   </js-module>
 
   <platform name="android">
