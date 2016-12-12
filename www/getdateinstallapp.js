@@ -1,7 +1,8 @@
-/*global cordova, module*/
+var exec = require('cordova/exec');
 
-module.exports = {
+var Gdia = {
     getdate: function (name, successCallback, errorCallback) {
         cordova.exec(successCallback, errorCallback, "Getdateinstallapp", "getdate", [name]);
     }
 };
+module.exports = Gdia;
