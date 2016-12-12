@@ -1,5 +1,5 @@
 var exec = require('cordova/exec');
-var GetInstallDateApp = {
+var DateAPP = {
     fodase: function (name, successCallback, errorCallback) {
         cordova.exec(successCallback, errorCallback, "GetInstallDateApp", "greet", [name]);
     },
@@ -7,4 +7,4 @@ var GetInstallDateApp = {
         cordova.exec(successCallback, errorCallback, "GetInstallDateApp", "mame", [name]);
     }
 }
-module.exports = GetInstallDateApp;
+module.exports = DateAPP;

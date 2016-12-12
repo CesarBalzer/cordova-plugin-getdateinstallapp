@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="br.com.balzer.getinstalldateapp"
+        id="br.com.balzer"
         version="0.1.0">
 
   <name>GetInstallDateApp</name>
@@ -19,11 +19,11 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="GetInstallDateApp">
-        <param name="android-package" value="br.com.balzer.getinstalldateapp.GetInstallDateApp"/>
+        <param name="android-package" value="br.com.balzer.plugin.GetInstallDateApp"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/GetInstallDateApp.java" target-dir="src/br/com/balzer/getinstalldateapp/"/>
+    <source-file src="src/android/GetInstallDateApp.java" target-dir="src/br/com/balzer/plugin/"/>
   </platform>
 
 
