@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="br.com.balzer.hello"
+        id="com.example.hello"
         version="0.1.0">
 
   <name>Hello</name>
@@ -19,27 +19,12 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Hello">
-        <param name="android-package" value="br.com.balzer.plugin.Hello"/>
+        <param name="android-package" value="com.example.plugin.Hello"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/br/com/balzer/plugin/"/>
+    <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
   </platform>
 
-  <platform name="ios">
-    
-    <config-file target="config.xml" parent="/widget">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" />
-      </feature>
-    </config-file>
-
-    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
-  </platform>
-
-  <platform name="wp7">
-    <source-file src="src/wp7/Hello.cs"/>
-  </platform>
 
 </plugin>
