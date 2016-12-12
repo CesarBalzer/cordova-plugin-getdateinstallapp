@@ -5,10 +5,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import java.util.Date;
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import android.content.ComponentName;
-import android.content.Context;
-import java.io.File;
 
 public class Getdateinstallapp extends CordovaPlugin {
 
@@ -17,8 +13,7 @@ public class Getdateinstallapp extends CordovaPlugin {
 
         if (action.equals("getdate")) {
             String name = data.getString(0);
-            String message = "Hello, " + name;
-            callbackContext.success(message);
+            getInstallDate(callbackContext,name);
             return true;
         } else if (action.equals("getteste")) {
             String name = data.getString(0);
@@ -30,14 +25,16 @@ public class Getdateinstallapp extends CordovaPlugin {
         }
     }
 
-    void getInstallDate(CallbackContext callbackContext) {
+    void getInstallDate(CallbackContext callbackContext,String name) {
         String errMsg = null;
-        PackageManager pm = context.getPackageManager();
-        ApplicationInfo appInfo = pm.getApplicationInfo("br.com.balzer.getdateinstallapp", 0);
-        String appFile = appInfo.sourceDir;
-        long installed = new File(appFile).lastModified();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String installTime = dateFormat.format(new Date(packageInfo.firstInstallTime));
-        callbackContext.success(installTime);
+        try {
+            String message = "Hello, " + name;
+            callbackContext.success(message);
+            
+        } catch (Exception e) {
+            errMsg = e.getMessage();
+            e.printStackTrace();
+            callbackContext.error(errMsg);
+        }
     }
 }
