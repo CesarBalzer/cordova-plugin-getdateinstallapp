@@ -35,15 +35,15 @@ Ou para pegar a data de atualização do app
 ```js
 	document.getElementById("getUpdateTime").addEventListener("click", getDataAtualizacao);
 	function getDataAtualizacao() {
-    var success = function (message) {
-        alert(message);
+    var sucesso = function (mensagem) {
+        alert(mensagem);
     }
 
-    var failure = function () {
-        alert("Error calling Gdia Plugin");
+    var falha = function () {
+        alert("Erro na chamada do plugin");
     }
 
-    Gdia.getupdatetime("br.com.example", success, failure);
+    Gdia.getupdatetime("br.com.example", sucesso, falha);
 }
 ```
 
