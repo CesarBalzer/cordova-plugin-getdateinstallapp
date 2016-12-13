@@ -16,10 +16,10 @@ public class Getdateinstallapp extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
-
+    	Context context=this.cordova.getActivity().getApplicationContext();
         if (action.equals("getdate")) {
             String name = data.getString(0);
-            getInstallDate(callbackContext,name);
+            getInstallDate(callbackContext,name,context);
             return true;
         } else if (action.equals("getteste")) {
             String name = data.getString(0);
@@ -31,13 +31,13 @@ public class Getdateinstallapp extends CordovaPlugin {
         }
     }
 
-    void getInstallDate(CallbackContext callbackContext,String name) {
+    void getInstallDate(CallbackContext callbackContext,String name, Context context) {
     	
 		String installTime = null;
 		Date updateTime = null;
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		//context context = null;
-		Context context=this.cordova.getActivity().getApplicationContext();
+		
 		PackageManager pm = context.getPackageManager();
 		ApplicationInfo appInfo = null;
 		String packageName = "com.example.appplugin";
