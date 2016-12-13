@@ -7,7 +7,6 @@ import java.util.Date;
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
-import android.support.v7.app.ActionBarActivity;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
