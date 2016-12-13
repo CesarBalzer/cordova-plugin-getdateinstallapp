@@ -1,8 +1,8 @@
 var exec = require('cordova/exec');
 
 var Gdia = {
-    getdate: function (name, successCallback, errorCallback) {
-        exec(successCallback, errorCallback, "Getdateinstallapp", "getdate", [name]);
+    getdatetime: function (name, successCallback, errorCallback) {
+        exec(successCallback, errorCallback, "Getdateinstallapp", "getdatetime", [name]);
     }
 };
 module.exports = Gdia;
