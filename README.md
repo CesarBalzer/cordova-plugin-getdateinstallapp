@@ -50,10 +50,10 @@ Ou para pegar a data de atualização do app
 Adicione em seu arquivo `index.html` o seguinte código dos botões que vão fazer a chamada das funções:
 
 ```html
-	        <div>
-            	<p><button id="getDateTime">Data de instalação</button></p>
-            	<p><button id="getUpdateTime">Data de atualização</button></p>
-            </div>
+	   <div>
+            <p><button id="getDateTime">Data de instalação</button></p>
+            <p><button id="getUpdateTime">Data de atualização</button></p>
+       </div>
 ```
 
 Instale a plataforma Android
