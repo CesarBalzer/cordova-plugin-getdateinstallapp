@@ -8,7 +8,7 @@ Crie um novo projeto Cordova:
 
     $ cordova create gdia br.com.example Gdia
     
-Instalando o plugin, entre no diretorio:
+Instalando o plugin, entre no diretorio e coloque o endereço do plugin:
 
     $ cd gdia
     $ cordova plugin add https://github.com/CesarBalzer/cordova-plugin-getdateinstallapp.git
