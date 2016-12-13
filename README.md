@@ -1,4 +1,4 @@
-# Cordova pegar data/hora de instalação e data/hora de atualização do APP
+# Cordova Plugin - pegar data/hora de instalação e data/hora de atualização do APP
 
 Plugin simples para pegar a data de instalação e data de atualização do app, com base da captura de data de instalação do aplicativo via Java.
 
