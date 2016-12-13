@@ -37,8 +37,8 @@ public class Getdateinstallapp extends CordovaPlugin {
 		Date updateTime = null;
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		//context context = null;
-		//Context context = 
-		PackageManager pm = getApplicationContext().getPackageManager();
+		Context context=this.cordova.getActivity().getApplicationContext();
+		PackageManager pm = context.getPackageManager();
 		ApplicationInfo appInfo = null;
 		String packageName = "com.example.appplugin";
 		
