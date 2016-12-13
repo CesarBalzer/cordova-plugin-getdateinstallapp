@@ -32,19 +32,36 @@ public class Getdateinstallapp extends CordovaPlugin {
     }
 
     void getInstallDateTime(CallbackContext callbackContext,String packageName, Context context) {
-		String installTime = null;
+    	String installTime = null;
+    	SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    	PackageManager pm = context.getPackageManager();
+    	ApplicationInfo appInfo = null;
+    	try {
+    		appInfo = pm.getApplicationInfo(packageName, 0);
+    		PackageInfo packageInfo = pm.getPackageInfo(packageName, PackageManager.GET_PERMISSIONS);
+    		installTime = dateFormat.format( new Date( packageInfo.firstInstallTime ) );
+    	} catch (NameNotFoundException e) {
+    		// TODO Auto-generated catch block
+    		e.printStackTrace();
+    	}
+    	callbackContext.success(installTime);
+    	
+    }
+    
+    void getInstallUpdateTime(CallbackContext callbackContext,String packageName, Context context) {
+		String updateTime = null;
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		PackageManager pm = context.getPackageManager();
 		ApplicationInfo appInfo = null;
 		try {
 			appInfo = pm.getApplicationInfo(packageName, 0);
 			PackageInfo packageInfo = pm.getPackageInfo(packageName, PackageManager.GET_PERMISSIONS);
-			installTime = dateFormat.format( new Date( packageInfo.firstInstallTime ) );
+			updateTime = dateFormat.format( new Date( packageInfo.lastUpdateTime ) );
 		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		callbackContext.success(installTime);
+		callbackContext.success(updateTime);
     	
     }
 }
