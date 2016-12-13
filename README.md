@@ -66,6 +66,6 @@ Execute seu código
 
 ## Mais Informações
 
-Para mais informações de como configurar o Apache Cordova acesse a documentação[the documentation](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
+Para mais informações de como configurar o Apache Cordova acesse a documentação [Documentação Apache Cordova](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
 
-Para mais informações dos plugins acesse [Plugin Development Guide](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html)
+Para mais informações dos plugins acesse [Guia de desenvolvimento de plugins](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html)
